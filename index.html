@@ -1498,13 +1498,21 @@
             <div class="space-50"></div>
           </div>
           <div class="col-md-8">
-            <form>
+            <p>begining of form</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="row">
                 <div class="col-xs-12 col-sm-6">
                   <div class="form-group">
                     <input
+                      type="hidden"
+                      name="access_key"
+                      value="1296a4ca-2a25-4eca-b786-a9aa7a5b5553"
+                    />
+
+                    <input
                       class="form-control"
                       type="text"
+                      name="name"
                       id="yourname"
                       placeholder="Enter Your Name"
                       required
@@ -1516,6 +1524,7 @@
                   <div class="form-group">
                     <input
                       type="email"
+                      name="email"
                       class="form-control"
                       id="youremail"
                       placeholder="Enter Your Email"
@@ -1530,6 +1539,7 @@
                   <div class="form-group">
                     <input
                       type="text"
+                      name="subject"
                       class="form-control"
                       id="yoursubject"
                       placeholder="Enter Your Subject"
@@ -1542,6 +1552,7 @@
               <div class="form-group">
                 <textarea
                   class="form-control"
+                  name="message"
                   id="yourmessage"
                   rows="6"
                   placeholder="Enter Your Message"
